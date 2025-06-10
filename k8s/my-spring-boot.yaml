@@ -4,7 +4,7 @@ metadata:
   name: my-spring-boot-app
   namespace: argocd
 spec:
-  schedule: "* * * * *" #	Run every minute
+  schedule: "0 0 * * *" #	Run every minute
   jobTemplate:
     spec:
       template:
