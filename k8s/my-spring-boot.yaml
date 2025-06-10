@@ -2,6 +2,7 @@ apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: my-spring-boot-app
+  namespace: argocd
 spec:
   schedule: "* * * * *" #	Run every minute
   jobTemplate:
